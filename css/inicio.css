@@ -1,0 +1,112 @@
+@import url();
+
+:root{
+    --color-primario:#ffff;
+    --color-secundario:#d15959;
+    --color-terciario:#f5edd6;
+    --color-cuarto:#0000;
+    --color-quinto:#dbffac;
+
+    --fuente-calibri:'calibri', sans serif;
+    --fuente-calibri-negrita:'calibri', bold;
+    --fuente-Sicret:'Sicret Mono PERSONAL', bold;
+}
+
+*{
+    padding: 0%;
+    margin: auto;
+}
+
+header{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    height: 80vh;
+    box-sizing: content-box;
+}
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-terciario);
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.header{
+    padding: 2% 0% 0% 15%;
+}
+
+.header_menú{
+    display: flex;
+    gap: 20px;
+}
+
+.header__menú__link{
+    font-family: var(--fuente-calibri-negrita);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-cuarto);
+    text-decoration: none;
+
+}
+
+.Título-destaque{
+    color: var(--color-cuarto);
+}
+
+.presentación{
+    padding: 10% 15%;
+    display: flex;
+    align-items:center;
+    margin: 5%;
+    justify-content: space-between;
+}
+
+.presentación_contenido{
+    width: 615px;
+    display: flex;
+    flex-direction:column;
+    gap: 40px;
+}
+
+.presentación_contenido_título{
+    font-size: 56px;
+    font-family: var(--fuente-Sicret);
+}
+
+.presentación_contenido_texto{
+    font-size: 40px;
+    font-family: var(--fuente-calibri);
+}
+
+.presentación_enlaces{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.presentación__enlaces__iconos{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.presentación__enlaces__link__redes{
+    width: 200px;
+    color: var(--color-secundario);
+    text-align: center;
+    padding: 21.5px 0;
+    border: 2px solid var(--color-secundario);
+    border-radius: 10px;
+    color: var(--color-primario);
+    display:flex;
+    justify-content: center;
+    gap:10px;
+}
+
+.footer{
+    background-color: var(--color-quinto);
+    padding: 40px;
+    color: var(--color-primario);
+}

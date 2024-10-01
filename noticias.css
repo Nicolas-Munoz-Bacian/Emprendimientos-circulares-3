@@ -1,0 +1,435 @@
+@import url('http://127.0.0.1:5501/noticias.css');
+
+:root{
+    --color-primario:#ffff;
+    --color-secundario:#d15959;
+    --color-terciario:#f5edd6;
+    --color-cuarto:#0000;
+    --color-quinto:#a9ea65;
+    --color-sexto:#b7dde2;
+    --color-septimo:#074170;
+    --imagen-principal: url(imagenes/lugares/El\ volcán\ Osorno.jpg);
+    --fuente-calibri:'calibri', 'sans serif';
+    --fuente-calibri-negrita:'calibri', 'bold';
+    --fuente-open-sans-bold: 'Open Sans', 'bold';
+    --fuente-Sicret-Mono-PERSONAL:'Sicret Mono PERSONAL', 'bold';
+}
+
+*{
+    padding: 0%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+header{
+    box-sizing: content-box;
+    position: initial;
+    display: flex;
+    background-color: var(--color-primario);
+    padding: 1% 0% 1% 1%;
+}
+
+body {
+    height: 100%;
+    font-family: var(--fuente-calibri);
+}
+
+.logo_Empremdimientos_circulares{
+    width: 17%;
+    display: block;
+}
+
+.menu{
+    flex-wrap: wrap;
+}
+
+.menu_contenido{
+    display: flex;
+    height: 30%;
+    align-items:center;
+    flex-wrap: wrap;
+    margin: 1rem 1rem 0rem 1rem;
+    position: relative;
+}
+
+.header__menú__link{
+    display: flex;
+    width: auto;
+}
+
+.btn {
+    background-color: var(--color-septimo);
+    position: relative;
+    width: 160%;
+    font-family: var(--fuente-calibri);
+    color: var(--color-primario);
+    border: none;
+    border-radius: 5px;
+    font-size: 75%;
+    padding: 6px;
+    margin: 2px 0px;
+    cursor: pointer;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-flow: column-reverse;
+    gap: 5px;
+  }
+
+.btn:hover {
+    font-weight:1000;
+    font-family: var(--fuente-open-sans-bold);
+    background-color: var(--color-septimo);
+    color: var(--color-quinto);
+    display: flex;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 20px;
+    display: flex;
+}
+
+nav a:hover{
+    color: none;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.resolucion{
+    width: 100%;
+}
+
+/**Movil**/
+
+@media (max-width: 767px){
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+    .movil {}
+
+    nav ul a{
+        font-size: 16px;
+    }
+}
+
+/**Tablet**/
+
+@media (min-width: 768px) and (max-width: 990px){
+    .desktop {display: none;}
+    .tablet {}
+    .movil {display: none;}
+}
+
+/**Escritorio**/
+
+@media (min-width: 990px){
+    .desktop {}
+    .tablet {display: none;}
+    .movil {display: none;}
+    
+    .ul_menu{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+    }
+    nav .ul_menu{
+        margin: 10px 0;
+        line-height: 30px;
+    }
+    nav .ul_menu a{
+        font-size: 20px;
+    }
+
+    .btn:hover {
+        background-color: var(--color-septimo);
+        font-family: var(--fuente-calibri-negrita);
+    }
+
+}
+
+.Título-destaque{
+    color: var(--color-septimo);
+}
+
+.Título_contenido{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column-reverse;
+    font-family: var(--fuente-calibri-negrita);
+    font-size: none;
+    color: var(--color-septimo);
+    position: relative;
+    font-size: 120%;
+}
+
+.titulo_noticia{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contenido_de_lado_1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 0px;
+    align-items: center;
+    font-family: var(--fuente-calibri);
+    flex-wrap: wrap;
+}
+
+.menú_ver{
+    display: flex;
+    justify-content: center;
+}
+
+
+.nav .menú_ver{
+    display: flex;
+    margin: auto;
+    font-size: 60%;
+    margin-top: 50px;
+}
+
+.menú_horizontal > li > a{
+    display: flex;
+    padding: 10px 13px;;
+    color: var(--color-septimo);
+    text-decoration: none;
+}
+
+.menú_horizontal > li:hover{
+    background-color: none;
+}
+
+.menú_horizontal li:hover .menú_vertical{
+    display: flex;
+}
+
+.nav .menú_ver{
+    display: flex;
+    margin: auto;
+    font-size: 40%;
+    margin-top: 50px;
+}
+
+.menú_horizontal{
+    list-style:none;
+    display: flex;
+    justify-content: none;
+}
+
+.menú_horizontal > li > a{
+    display: flex;
+    padding: 15% 20%;
+    color: var(--color-septimo);
+    text-decoration: none;
+
+}
+
+.menú_horizontal > li:hover{
+    background-color: none;
+}
+
+.menú_vertical li ul{
+    font-size: 100%;
+    margin-bottom: 8px;
+}
+
+.menú_vertical p{
+    font-size: 100%;
+    line-height: 1.3;
+}
+
+.menú_vertical li a{
+    display: block;
+    padding: 10px 5px 10px 5px;
+    text-decoration: none;
+}
+
+.imagen{
+    display: flex;
+    width: 280px;
+    height: 220px;
+    margin-left: 10px;
+    border-radius: 10px;
+    margin: 1rem 0rem 1rem 0rem;
+    flex-wrap: wrap;
+    border: 4px solid var(--color-septimo);
+}
+
+.menú_horizontal li:hover .menú_vertical{
+    display: block;
+}
+
+.menú_vertical li a{
+    display: block;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+.Subtítlo{
+    font-size: 10%;
+    display: flex;
+    font-weight: 500;
+    margin-bottom: 5rem;
+}
+
+.menu_contenido_th-grid {
+    size: 100%;;
+    justify-content: center;
+    margin: 0rem 2rem 0rem 1rem;
+    display: flex;
+}
+
+.tk-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.btn_Ver{
+    background-color: var(--color-septimo);
+    display: flex;
+    width: 90%;
+    height: 50%;
+    border: none;
+    border-radius: 0.5rem;
+    padding: auto;
+    justify-content: center;
+    position:relative;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.btn_Ver_nombre{
+    margin: 0.5rem 0.2rem 0.5rem 0.2rem;
+    color: var(--color-primario);
+    font-family: var(--fuente-calibri-negrita);
+    font-size: 165%;
+}
+
+.párrafo{
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fuente-calibri);
+    margin: 1rem 1rem 1rem 1rem;
+    font-size: 120%;
+}
+
+.nav .menú_ver{
+    display: flex;
+    margin: auto;
+    font-size: 60%;
+    margin-top: 50px;
+}
+
+.menú_horizontal > li > a{
+    display: flex;
+    padding: 10px 13px;;
+    color: var(--color-septimo);
+    text-decoration: none;
+}
+
+.menú_horizontal > li:hover{
+    background-color: none;
+}
+
+.menú_vertical{
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    display: none;
+    height: auto;
+    width: auto;
+    background-color: var(--color-primario);
+    border-radius: 10px;
+    border: 2px solid var(--color-septimo);
+}
+
+.menú_horizontal li:hover .menú_vertical{
+    display: flex;
+}
+
+.menú_vertical li a{
+    display: block;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+.contenido_footer{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.presentación_enlaces{
+    display: flex;
+    justify-content: center;
+}
+
+.footer_text_contenido{
+    display: flex;
+    color: var(--color-terciario);
+    align-items:baseline;
+    position: initial;
+    gap: 20px;
+}
+
+.presentación__logo__corfo{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 25%;
+    height:10%;
+    flex-wrap: wrap-reverse;
+}
+
+.presentación__logo__pastel{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 25%;
+    height:10%;
+    flex-wrap: wrap-reverse;
+}
+
+.presentación__enlaces__iconos{
+    justify-content: center;
+    display: flex;
+    width: 20%;
+    height: 20%;
+    flex-wrap: wrap-reverse;
+}
+
+.derechos_de_autor_text .p_footer{
+    position: initial;
+    font-size: 34%;
+    color: var(--color-terciario);
+    font-family: var(--fuente-calibri);
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.footer{
+    background-color: var(--color-quinto);
+    padding: 12px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}

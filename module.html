@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emprendiminetos circulares</title>
+    <link rel="stylesheet" href="module.css">
+    <link rel="shortcut icon" href="imagenes/Viraliza formación (PNG).png" type="image/x-icon">
+</head>
+<body>
+
+        <header>
+            <img class="logo_Empremdimientos_circulares" src="imagenes/Viraliza formación (PNG).png">
+            <nav class="menu">
+                <menu class="menu_contenido">
+                    <ul class="ul_menu">
+                        <a class="header__menú__link" href="index.html"><input class="btn" id="btn-inicio" type="button" value="INICIO"></input></a>
+                        <a class="header__menú__link" href="quienes somos.html"><input class="btn" id="btn-inico" type="button" value="¿QUIÉNES SOMOS?"></input></a>
+                        <a class="header__menú__link" href="proyecto.html"><input class="btn" id="btn-proyecto" type="button" value="PROYECTO"></input></a>
+                        <a class="header__menú__link" href="integrantes.html"><input class="btn" id="btn-programa-integrantes" type="button" value="INTEGRANTES"></input></a>
+                        <a class="header__menú__link" href="programa formativo.html"><input class="btn" id="btn-programa-formativo" type="button" value="PROGRAMA FORMATIVO"></input></a>
+                        <a class="header__menú__link" href="actividades.html"><input class="btn" id="btn-actividades" type="button" value="ACTIVIDADES"></input></a>
+                        <a class="header__menú__link" href="inscripciones.html"><input class="btn" id="btn-inscripciones" type="button" value="INSCRIPCIONES"></input></a>
+                    </ul  class="ul_menu">
+                </menu>
+            </nav>
+        </header>
+    
+</body>
+
+<h3 class="encabezado">Videos (Clases grabadas)</h3>
+
+<div class="contenedor_videos">
+    <div class="main-video">
+        <div class="video">
+            <video src="" controls muted autoplay></video>
+            <h3 class="tittle">01. Título del video aquí</h3>
+        </div>
+    </div>
+    
+    <div class="video_list">
+        <div class="vid active">
+            <video src="" muted></video>
+            <h3 class="tittle">01. Título del video aquí</h3>
+        </div>
+        <div class="vid">
+            <video src="" muted></video>
+            <h3 class="tittle">02. Título del video aquí</h3>
+        </div>
+        <div class="vid">
+            <video src="" muted></video>
+            <h3 class="tittle">03. Título del video aquí</h3>
+        </div>
+        <div class="vid">
+            <video src="" muted></video>
+            <h3 class="tittle">04. Título del video aquí</h3>
+        </div>
+        <div class="vid">
+            <video src="" muted></video>
+            <h3 class="tittle">05. Título del video aquí</h3>
+        </div>
+        <div class="vid">
+            <video src="" muted></video>
+            <h3 class="tittle">06. Título del video aquí</h3>
+        </div>
+        <div class="vid">
+            <video src="" muted></video>
+            <h3 class="tittle">07. Título del video aquí</h3>
+        </div>
+    </div>
+</div>
+
+<div class="Contenido_central_volver_arriba">
+    <button class="btn_volver_arriba" id="volver-cabecera">Volver arriba</button>
+</div>
+
+    <!-- Tu código HTML -->
+    <script>
+        const botonVolver = document.getElementById('volver-cabecera');
+  
+        botonVolver.addEventListener('click', () => {
+          document.querySelector('.logo_Empremdimientos_circulares').scrollIntoView({ behavior: 'smooth' });
+        });
+      </script>
+
+<footer class="footer">
+    <div class="contenido_footer">
+        <h2 class="footer_text_contenido">
+            <div class="derechos_de_autor_text">
+                <h1><p class="p_footer">CONTACTO:</p>
+                    <p class="p_footer">direccion.ejecutiva@circulartec.cl</p>
+                    <p class="p_footer">©Emprendimientos circulares. 2024.</p>
+                </h1>
+            </div>
+            <img class="presentación__footer__logo" src="imagenes/logo_corfo2024_proyecto_apoyado_blanco.png" alt="Logo corfo">
+            <img class="presentación__footer__logo" src="imagenes/Logo-circulartec-(Color pastel).png" alt="Logo CircularTec">
+            <div class="presentación__enlaces__iconos">
+                <a href="">
+                    <img src="imagenes/iconos/Youtube (blanco).png" alt="Youtube icono" width="30px" height="25px"></a>
+                    <a href="">
+                    <img src="imagenes/iconos/Instagram (blanco).png" alt="Instagram icono" width="30px" height="30px"></a>
+                    <a href="">
+                    <img src="imagenes/iconos/linkedin (blanco).png" alt="Linkedin icono" width="30px" height="30px"></a>
+            </div>
+        </h2>
+    </div>
+</footer>
+
+<!--jquery cdn link-->
+<script src="java.js"></script>
+
+</html>

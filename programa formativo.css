@@ -1,0 +1,463 @@
+@import url('http://127.0.0.1:5502/programa%20formativo.css');
+
+:root{
+    --color-primario:#ffff;
+    --color-secundario:#d15959;
+    --color-terciario:#f5edd6;
+    --color-cuarto:#0000;
+    --color-quinto:#a9ea65;
+    --color-sexto:#b7dde2;
+    --color-septimo:#025798;
+    --color-octavo:#45b337;
+    --imagen-principal: url(imagenes/lugares/El\ volcán\ Osorno.jpg);
+    --fuente-calibri:'calibri', 'sans serif';
+    --fuente-calibri-negrita:'calibri', 'bold';
+    --fuente-open-sans-bold: 'Open Sans', 'bold';
+    --fuente-Sicret-Mono-PERSONAL:'Sicret Mono PERSONAL', 'bold';
+}
+
+*{
+    padding: 0%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+/**ENCABEZADO Y MENÚ**/
+
+header{
+    box-sizing: content-box;
+    position: initial;
+    display: flex;
+    background-color: var(--color-primario);
+    padding: 1% 0% 1% 0%;
+}
+
+body {
+    height: 100%;
+    font-family: var(--fuente-calibri);
+}
+
+.logo_Empremdimientos_circulares{
+    width:160px;
+    height:auto;
+    object-fit: contain;
+}
+
+.menu{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.menu_contenido{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    flex-wrap: wrap;
+    margin: 1rem 0rem 0rem 0rem;
+    position: relative;
+}
+
+.header__menú__link{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.btn {
+    position: relative;
+    width: 100%;
+    font-family: var(--fuente-calibri);
+    background-color: var(--color-primario);
+    color: var(--color-septimo);
+    border: none;
+    border-radius: 5px;
+    font-size: 90%;
+    padding: 6px;
+    margin: 2px 0px;
+    cursor: pointer;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    object-fit: contain;
+  }
+
+.btn:hover {
+    font-family: var(--fuente-calibri-negrita);
+    color: var(--color-quinto);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 20px;
+    display: flex;
+}
+
+nav a:hover{
+    color: none;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: none;
+}
+
+.imagen-principal {
+    font-size: 15px;
+    min-height: 48.62em;
+    color: var(--color-primario);
+    background: url(imagenes/lugares/El\ volcán\ Osorno.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: flex-end;
+}
+
+.contenedor{
+    justify-items: center;
+    margin: 0 20px 0 20px;
+}
+
+.imagen-principal .contenedor{
+    margin: 0 auto;
+    margin-bottom: 12em;
+}
+
+.imagen-principal .título{
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+}
+
+.imagen-principal .Descripción-principal{
+    background-color: var(--color-primario);
+    border-radius: 10px;
+    font-family: var(--fuente-calibri-negrita);
+    justify-items: center;
+    color: black;
+    font-size: 1.35em;
+    line-height: 1.5em;
+    max-width: 100%;
+    padding: 10px;
+    opacity: 65%;
+    margin-bottom: 1em;
+    display: flex;
+}
+
+/**BREAPOINTS**/
+
+.resolucion{
+    width: 100%;
+}
+
+/**Movil**/
+
+@media (min-width: 320px) and (max-width: 490px){
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+    .movil {}
+
+    nav ul a{
+        font-size: 16px;
+        display: flex;
+    }
+}
+
+/**Tablet**/
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .desktop {display: none;}
+    .tablet {}
+    .movil {display: none;}
+}
+
+/**Escritorio**/
+
+@media (min-width: 990px){
+    .desktop {}
+    .tablet {display: none;}
+    .movil {display: none;}
+    
+    .ul_menu{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+    }
+    nav .ul_menu{
+        margin: 10px 0;
+        line-height: 30px;
+    }
+    nav .ul_menu a{
+        font-size: 20px;
+    }
+
+    .btn:hover {
+        background-color: var(--color-primario);
+        font-family: var(--fuente-calibri-negrita) var(--color-secundario);
+    }
+}
+
+/**PRESENTACIÓN**/
+
+.Título-destaque{
+    color: var(--color-septimo);
+}
+
+.título__principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 200%;
+}
+
+.Título_contenido{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--fuente-calibri-negrita);
+    color: var(--color-septimo);
+    font-size: 3rem;
+    margin: 2px 5px;
+}
+
+
+.Título-2{
+    display: flex;
+    position: initial;
+    flex-direction: column-reverse;
+    font-family: var(--fuente-calibri-negrita);
+    color: var(--color-septimo);
+    font-size: 80%;
+    margin: 0px 0px 0px 10px;
+}
+
+.parrafo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    font-family: var(--fuente-calibri);
+    font-size: 100%;
+    margin: 0px 0px 0px 10px;
+}
+
+.text{
+    margin: 10px 0px 10px 0px;
+    padding: 3px;
+    text-align:justify;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: var(--fuente-calibri);
+}
+
+/**RECOMENDACIONES Y AUTORIZACIÓN**/
+
+.RECOMENDACIONES_Y_AUTORIZACIÓN{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--color-septimo);
+    color: var(--color-primario);
+    width: 100%;
+    height: 200%;
+    border-radius: 10px;
+}
+
+.Contenido_de_lado {
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.contenedor__Beneficiario{
+    display: flex;
+    margin: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/**TABLA**/
+
+.participantes{
+    flex-wrap: wrap;
+    position: relative;
+    background-color: var(--color-primario);
+    color: var(--color-septimo);
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 1rem auto;
+}
+
+.table{
+    position: relative;
+    width: 100%;
+}
+
+.table, th, td{
+    flex-wrap: wrap;
+    border-collapse: collapse;
+    border: 2px solid var(--color-sexto);
+    flex-direction: column;
+    font-size: 90%;
+    font-weight: 600;
+    width: auto;
+    height: 100%;
+}
+
+th:nth-child(even) {background-color: var(--color-sexto)}
+
+th, td{
+    padding: 3px;
+}
+
+td {
+    flex-wrap: wrap;
+    vertical-align: bottom;
+  }
+
+th {
+    flex-wrap: wrap;
+    vertical-align: bottom;
+    text-align: left;
+}
+
+/**PARTICIPACIÓN**/
+
+.Título_contenido_3{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: var(--fuente-calibri-negrita);
+    font-size: 100%;
+    margin: 5px 0;
+}
+
+.text_contenido_3 {
+    justify-content: center;
+    display:block;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 80%;
+    height: auto;
+    font-size: 80%;
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.Párrafo_contenido{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-primario);
+    color: black;
+    font-family: var(--fuente-calibri);
+    font-size: 120%;
+    padding: 5px;
+}
+
+/**LEY N°21561**/
+
+.LEY_N°21561{
+    flex-wrap: wrap;
+    position: relative;
+    background-color: var(--color-primario);
+    color: var(--color-septimo);
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 1rem auto;
+}
+
+/** BOTÓN VOLVER ARRIVA (CABECERA) **/
+
+.btn_volver_arriba{
+    padding: 10px;
+    font-size: 100%;
+    font-family: var(--fuente-calibri);
+    border: 2px solid var(--color-septimo);
+    background: var(--color-primario);
+    color: var(--color-septimo);
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+    float: right;
+}
+
+.Contenido_central_volver_arriba{
+    justify-content: center;
+    display: flex;
+    clear: both;
+}
+
+/**FOOTER**/
+
+.footer{
+    background-color: var(--color-octavo);
+    padding: 10px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contenido_footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.presentación_enlaces{
+    display: flex;
+    justify-content: center;
+}
+
+.footer_text_contenido{
+    display: flex;
+    color: var(--color-primario);
+    position: initial;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.derechos_de_autor_text .p_footer{
+    position: initial;
+    font-size: 30%;
+    color: var(--color-primario);
+    font-family: var(--fuente-calibri);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.presentación__footer__logo{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: auto;
+    flex-wrap: wrap;
+    object-fit: contain;
+}
+
+.presentación__enlaces__iconos img{
+    margin: 0 8px;
+}
+
+.redes{
+    display: flex;
+    flex-wrap: wrap;
+}
